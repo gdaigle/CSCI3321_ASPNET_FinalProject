@@ -71,4 +71,5 @@
         <div class="col-md-3">&nbsp;</div>
         <div class="col-md-9">
             <asp:Button ID="btnSubmit" runat="server" Text="Add Book" CssClass="btn btn-primary" OnClick="btnSubmit_Click" />
+            </div>
 </asp:Content>
