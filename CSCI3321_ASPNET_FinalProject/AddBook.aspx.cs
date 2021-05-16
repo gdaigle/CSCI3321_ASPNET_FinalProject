@@ -35,7 +35,7 @@ namespace CSCI3321_ASPNET_FinalProject
             }
             else
             {
-                cmd.CommandText = "INSERT INTO Books(Title, Price, PublishDate, AuthorID, PublisherID, GenreID, WordCount) VALUES ('" + txtTitle.Text + "', " + txtPrice.Text + ", '" + Convert.ToDateTime(txtPublishDate.Text).Date + "','" + ddlAuthor.SelectedValue + "','" + ddlPublisher.SelectedValue + "','" + ddlGenre.SelectedValue + "', " + txtPrice.Text + ")";
+                cmd.CommandText = "INSERT INTO Books(Title, Price, PublishDate, AuthorID, PublisherID, GenreID, WordCount) VALUES ('" + txtTitle.Text + "', '" + txtPrice.Text + "', '" + Convert.ToDateTime(txtPublishDate.Text).Date + "','" + ddlAuthor.SelectedValue + "','" + ddlPublisher.SelectedValue + "','" + ddlGenre.SelectedValue + "' ,'" + txtWordCount.Text + "')";
                 conn.Open();
                 cmd.ExecuteNonQuery();
                 conn.Close();
